@@ -1,0 +1,46 @@
+{
+  "name": "lines",
+  "description": "SVG background layer drawing lines between selected HTML elements. Modified from Raphael.js' graffle example. Very initial.",
+  "version": "0.0.1",
+  "devDependencies": {
+    "tape": "~0.3.2"
+  },
+  "testling": {
+    "scripts": [
+        "js/lines.js",
+        "js/script.js"
+    ],
+    "browsers": [ "ie8", "ie9", "ff/13", "chrome/20" ]
+  },
+  "keywords": [
+    "svg",
+    "raphael"
+  ],
+  "contributors": [
+    {
+      "name": "Michael 'Mikeumus' Duane Mooring",
+      "email": "mike@mdm.cm",
+      "web": "http://mdm.cm/"
+    }
+  ],
+  "dependencies": {
+    "yui": "3.x"
+  },
+  "demos": "/example.html",
+  "bugs": {
+    "mail": "mike@mdm.cm",
+    "web": "https://github.com/inkwhy/lines/issues"
+  },
+  "repositories": [
+    {
+      "type": "git",
+      "url": "https://github.com/inkwhy/lines.git"
+    }
+  ],
+  "licenses": [
+    {
+      "name": "MIT",
+      "url": "http://www.opensource.org/licenses/mit-license.php"
+    }
+  ]
+}

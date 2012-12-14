@@ -3,14 +3,16 @@
   "description": "SVG background layer drawing lines between selected HTML elements. Modified from Raphael.js' graffle example. Very initial.",
   "version": "0.0.1",
   "devDependencies": {
-    "tape": "~0.3.2"
+    "tape": "~0.3.2",
+    "mocha": "~1.7.4"
   },
   "testling": {
     "scripts": [
         "js/lines.js",
         "js/script.js"
     ],
-    "browsers": [ "ie8", "ie9", "ff/13", "chrome/20" ]
+    "browsers": [ "ie8", "ie9", "ff/13", "chrome/20" ],
+    "harness" : "mocha",
   },
   "keywords": [
     "svg",

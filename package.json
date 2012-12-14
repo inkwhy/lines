@@ -7,6 +7,9 @@
     "mocha": "~1.7.4"
   },
   "testling": {
+    "files": [
+        "test/test.js"
+    ]
     "scripts": [
         "js/lines.js",
         "js/script.js"

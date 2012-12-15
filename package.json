@@ -3,7 +3,7 @@
   "description": "SVG background layer drawing lines between selected HTML elements. Modified from Raphael.js' graffle example. Very initial.",
   "version": "0.0.1",
   "devDependencies": {
-    "tape": "~0.3.2",
+    "tape": "~0.1.1",
     "mocha": "~1.7.4"
   },
   "testling": {
@@ -19,7 +19,8 @@
   },
   "keywords": [
     "svg",
-    "raphael"
+    "raphael",
+    "yui"
   ],
   "contributors": [
     {
@@ -29,7 +30,8 @@
     }
   ],
   "dependencies": {
-    "yui": "3.x"
+    "yui": "3.x",
+    "raphael": "1.4.7"
   },
   "demos": "/example.html",
   "bugs": {

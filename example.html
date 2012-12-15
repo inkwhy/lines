@@ -1,15 +1,24 @@
-<html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
     <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>lines example</title>
         <link rel="stylesheet" type="text/css" href="style.css">
     </head>
     <body>
-        <div id="holder"> </div>
-        <div id="box-one"> </div>
-        <div id="box-two"> </div>
-        
+        <!--// #lines element ID to select for YUI to setStyles and Raphael to create the svg shapes //-->
+        <div id="lines"> </div>
+        <!--// Your two connecting divs //-->
+        <div id="box1"> </div>
+        <div id="box2"> </div>
+        <!--// yui.js to do DOM selection //-->
         <script src="http://yui.yahooapis.com/3.8.0/build/yui/yui-min.js"></script>
+        <!--// raphael.js to create the svg //-->
         <script src="js/raphael.js"> </script>
+        <!--// lines.js to create the connecting lines between two elements //-->
         <script src="js/lines.js" type="text/javascript"> </script>
+        <!--// script.js is your script. Whatever you want it to be. It doesn't have to be called script.js //-->
         <script src="js/script.js" type="text/javascript"> </script>
     </body>
 </html>

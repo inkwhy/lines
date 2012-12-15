@@ -1,10 +1,18 @@
 {
   "name": "lines",
-  "description": "SVG background layer drawing lines between selected HTML elements. Modified from Raphael.js' graffle example. Very initial.",
   "version": "0.0.1",
+  "description": "SVG background layer drawing lines between selected HTML elements. Modified from Raphael.js' graffle example. Very initial.",
+  "main" : "example.html",
+  "directories" : {
+      "js" : "js",
+      "test" : "test"
+  },
+  "dependencies": {
+    "yui" : "3.x",
+    "raphael" : "1.4.7",
+  },
   "devDependencies": {
-    "tape": "~0.1.1",
-    "mocha": "~1.7.4"
+    "tape": "~0.1.1"
   },
   "testling": {
     "files": [
@@ -15,8 +23,8 @@
         "js/script.js"
     ],
     "browsers": [ "ie8", "ie9", "ff/13", "chrome/20" ],
-    "harness" : "mocha",
   },
+  "homepage" : "https://github.com/inkwhy/lines",
   "keywords": [
     "svg",
     "raphael",
@@ -27,10 +35,7 @@
       "name": "Michael 'Mikeumus' Duane Mooring",
       "email": "mike@mdm.cm",
       "web": "http://mdm.cm/"
-    }
-  ],
-  "dependencies": {
-    "yui": "3.x",
+  i": "3.x",
     "raphael": "1.4.7"
   },
   "demos": "/example.html",

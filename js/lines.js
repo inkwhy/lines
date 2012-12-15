@@ -67,16 +67,6 @@ var getOffset = function( el ) {
 };
 
 
-
-  /*  var box2W = document.getElementById('one').offsetHeight;
-    var box2W = document.getElementById('one').offsetWidth;
-    var boxtipH = document.getElementById('two').offsetHeight;
-    var boxtipW = document.getElementById('two').offsetWidth; */
-
-
-  /*  var box2 = getOffset( document.getElementById('box2') );
-    var boxtip = getOffset( document.getElementById('boxtip') ); */
-
   /*  var dragger = function () {
             this.ox = this.type == "rect" ? this.attr("x") : this.attr("cx");
             this.oy = this.type == "rect" ? this.attr("y") : this.attr("cy");
@@ -92,9 +82,39 @@ var getOffset = function( el ) {
         },
         up = function () {
             this.animate({"fill-opacity": 0}, 500);
-        },      */
-        r = Raphael("holder", '100%', '100%'),
+        }, */          
+
+ /*  connections.push(r.connection(shapes[0], shapes[1], "transparent")); */
+
+ YUI().add('lines', function(Y){
+     
+    r = Raphael("lines", '100%', '100%'),
         connections = [],
         shapes = [];
-
-  /*  connections.push(r.connection(shapes[0], shapes[1], "transparent")); */
+     
+    Y.lines = function (one, two) {
+        Y.one('#lines').setStyles({
+            zIndex:'-1',
+            width:'100%',
+            height:'100%',
+            position: 'absolute'
+        });
+        var box1W = one.get('offsetWidth');
+        var box1H = one.get('offsetHeight');
+        var box1 = one.get('region');
+        var box2W = two.get('offsetWidth');
+        var box2H = two.get('offsetHeight');
+        var box2 = two.get('region');
+     //   var boxW = Y.one('#box2').get('offsetWidth');
+     //   var offset = boxW*4;
+            shaping = {};
+            connections = [];
+            shaping = {box2Shape: r.rect(box2.left,box2.top,box2W,box2H /*box2.left - offset/2, box2.top-19, boxW+offset, 1*/ ), box1Shape: r.rect(box1.left,box1.top,box1W,box1H)};
+            connections.push(r.connection(shaping.box2Shape,shaping.box1Shape,'#777'));
+                for (var i in shaping) {
+                    shaping[i].attr({fill: 'transparent', stroke: 'transparent', "fill-opacity": 0, "stroke-width": 2});
+        }
+    };
+}, '0.0.1', {
+    requires: 'node'
+});

@@ -1,6 +1,8 @@
+var linesTest = require('../js/lines.js');
+var scriptTest = require('../js/script.js');
 var test = require('tape');
-var myCode = require('../js/script.js');
 
-test('shpaes', function(shapes){
-    myCode.lines();
+test('linesTest', 'scriptTest', function(t){
+    t.equal(linesTest.lines(scriptTest.boxOne, scriptTest.boxTwo));
+    t.end();
 });

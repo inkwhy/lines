@@ -3,7 +3,7 @@
 ![alt text](http://373.be/lines/lines_example.png "lines example image of a connecting svg curved line between a red box and a blue box.")
 
 #### Hey...
-##### This can be used to point out things in a fancy user interface...
+##### This can be used to point out things in a fancy user interface!
 
 ###### That's what we use it for. 
 

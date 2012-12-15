@@ -9,7 +9,7 @@ in your html
 <div id="lines"> </div>
 ```
 
-in your script.js
+in your javascript
 ```javascript
 var boxOne = Y.one('#box1');
 var boxTwo = Y.one('#box2');
@@ -20,7 +20,7 @@ lines(boxOne, boxTwo);
 ___
 
 
-##### example.html Dependencies
+##### Dependencies
 <table>
 <tr>
     <td>Raphael.js</td>
@@ -36,7 +36,7 @@ ___
 ___
 
 
-Run __lines__ tests in [![browser support](http://ci.testling.com/Inkwhy/lines.png)]
+Run __lines__ tests in [![browser support](http://ci.testling.com/inkwhy/lines.png)](http://ci.testling.com/inkwhy/lines)
 with [testling-ci](http://ci.testling.com/Inkwhy/lines).
 
 ## TO DO

@@ -17,6 +17,9 @@ var boxTwo = Y.one('#box2');
 lines(boxOne, boxTwo);
 ```
 
+___
+
+
 ##### example.html Dependencies
 <table>
 <tr>
@@ -28,6 +31,10 @@ lines(boxOne, boxTwo);
     <td>3.x</td>
   </tr>
 </table>
+
+
+___
+
 
 Run __lines__ tests in [![browser support](http://ci.testling.com/Inkwhy/lines.png)]
 with [testling-ci](http://ci.testling.com/Inkwhy/lines).

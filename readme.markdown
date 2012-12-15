@@ -13,7 +13,7 @@
 ___
 
 
-__lines__ is derived from [raphael.js'](https://github.com/DmitryBaranovskiy/raphael/) [graffle.js](http://raphaeljs.com/graffle.js). What __lines__ does is set the style of the element with the ID of "lines" to be absolutely positioned and with a z-index of -1, creating a raphael generated svg layer behind your front-end layout. In that svg layer, a line is drawn between to selected element. It works by calling the __lines__ function. The following is a example:
+__lines__ is derived from [raphael.js'](https://github.com/DmitryBaranovskiy/raphael/) [graffle.js](http://raphaeljs.com/graffle.js). What __lines__ does is set the style of the element with the ID of "lines" to be absolutely positioned and with a z-index of -1, creating a raphael generated svg layer behind your front-end layout. In that svg layer, a line is drawn between two selected element. It works by calling the __lines__ function. The following is a example:
 
 in your html
 ```html

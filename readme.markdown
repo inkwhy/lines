@@ -43,12 +43,8 @@ ___
   </tr>
 </table>
 
-
 ___
 
-
-Run __lines__ tests in [![browser support](http://ci.testling.com/inkwhy/lines.png)](http://ci.testling.com/inkwhy/lines)
-with [testling-ci](http://ci.testling.com/Inkwhy/lines).
 
 ## TO DO
 1. Fix any issues.
